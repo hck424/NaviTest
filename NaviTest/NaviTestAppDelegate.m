@@ -6,15 +6,17 @@
 //  Copyright © 2018년 학철. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "NaviTestAppDelegate.h"
 
-@interface AppDelegate ()
+@interface NaviTestAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation NaviTestAppDelegate
 
-
++ (NaviTestAppDelegate *)sharedAppDelegate {
+    return (NaviTestAppDelegate *)[UIApplication sharedApplication];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
